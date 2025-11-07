@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Day - Workshop di Meditazione | Ritrova il Tuo Equilibrio</title>
+    <meta name="description" content="Partecipa al workshop Mindful Day: una giornata di meditazione e mindfulness per ridurre lo stress e ritrovare la serenità interiore. Prenota ora!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Sticky -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Mindful Day</a>
+                <nav class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#benefits">Cos'è</a></li>
+                        <li><a href="#program">Programma</a></li>
+                        <li><a href="#teacher">Insegnante</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#registration">Iscriviti</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="mobile-nav">
+                    <ul class="nav-links">
+                        <li><a href="#benefits">Cos'è</a></li>
+                        <li><a href="#program">Programma</a></li>
+                        <li><a href="#teacher">Insegnante</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#registration">Iscriviti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Mindful Day</h1>
+            <h2>Workshop di Meditazione</h2>
+            <p>Scopri la pace interiore attraverso un'esperienza di meditazione guidata in un ambiente sereno e accogliente.</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <div class="countdown-text">⏰ Ultimi posti disponibili! Iscrizioni chiudono tra:</div>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Giorni</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Ore</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minuti</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Secondi</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#benefits" class="cta-button">Scopri di più</a>
+        </div>
+    </section>
+
+    <!-- Sezione Benefici - Layout Asimmetrico -->
+    <section id="benefits" class="section">
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 120 0 0 1200 0 1200 120z" class="shape-fill" fill="#FFFFFF"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title">I Benefici di una Giornata Mindful</h2>
+
+            <div class="benefit-flow-container">
+                <div class="benefit-item">
+                    <div class="benefit-image-wrapper image-left animated animate-fade-left">
+                        <img src="images/stress-relief.jpg" alt="Donna rilassata che riduce lo stress" loading="lazy" decoding="async">
+                    </div>
+                    <div class="benefit-text-wrapper text-right animated animate-fade-right">
+                        <h3>Riduci lo Stress</h3>
+                        <p>Impara tecniche scientificamente provate per gestire l'ansia e ridurre i livelli di cortisolo, l'ormone dello stress, attraverso pratiche di respirazione consapevole.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-image-wrapper image-right animated animate-fade-right">
+                        <img src="images/concentration.jpg" alt="Persona concentrata che scrive" loading="lazy" decoding="async">
+                    </div>
+                    <div class="benefit-text-wrapper text-left animated animate-fade-left">
+                        <h3>Migliora la Concentrazione</h3>
+                        <p>Sviluppa la capacità di mantenere l'attenzione sul presente, migliorando la produttività e la qualità delle tue decisioni quotidiane.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-image-wrapper image-left animated animate-fade-left">
+                        <img src="images/awareness.jpg" alt="Occhi chiusi in meditazione profonda" loading="lazy" decoding="async">
+                    </div>
+                    <div class="benefit-text-wrapper text-right animated animate-fade-right">
+                        <h3>Aumenta la Consapevolezza</h3>
+                        <p>Coltiva una maggiore comprensione di te stesso e delle tue emozioni, sviluppando un rapporto più equilibrato con i pensieri e le sensazioni.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Programma della Giornata -->
+    <section id="program" class="section section-alt">
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-17,148.63-10.79,204.18,3.24,70.85,17.62,138.83,50.42,209.92,70.85,69.36,20.08,136.66,13.09,200.93,0l1.32-3.46L1200,0 0,0 0,60.35C0,60.35,202.46,113.36,321.39,56.44Z" class="shape-fill" fill="#F5F5F5"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Cosa Faremo Insieme</h2>
+            <div class="timeline">
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">09:30</div>
+                        <h3>Accoglienza e Introduzione</h3>
+                        <p>Benvenuto nel nostro spazio sacro. Presentazioni e introduzione ai principi della mindfulness.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">10:00</div>
+                        <h3>Pratica: La Meditazione sul Respiro</h3>
+                        <p>Sessione guidata di meditazione focalizzata sul respiro per calmare la mente e centrare l'attenzione.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">11:30</div>
+                        <h3>Teoria: Cos'è la Mindfulness</h3>
+                        <p>Approfondimento teorico sui benefici scientifici della mindfulness e come integrarla nella vita quotidiana.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">13:00</div>
+                        <h3>Pausa Pranzo Consapevole</h3>
+                        <p>Pranzo in silenzio per praticare l'alimentazione mindful e gustare ogni boccone con piena presenza.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">14:30</div>
+                        <h3>Pratica: Body Scan e Gestione delle Emozioni</h3>
+                        <p>Esplorazione del corpo attraverso la scansione corporea e tecniche per accogliere le emozioni difficili.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">16:00</div>
+                        <h3>Sessione di Q&A e Condivisione</h3>
+                        <p>Momento di condivisione delle esperienze e risposte alle domande per approfondire la pratica.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item animated animate-fade-up">
+                    <div class="timeline-content">
+                        <div class="timeline-time">17:00</div>
+                        <h3>Saluti Finali</h3>
+                        <p>Chiusura del cerchio con una breve meditazione di gratitudine e consigli per continuare la pratica a casa.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Insegnante -->
+    <section id="teacher" class="section">
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-17,148.63-10.79,204.18,3.24,70.85,17.62,138.83,50.42,209.92,70.85,69.36,20.08,136.66,13.09,200.93,0l1.32-3.46L1200,0 0,0 0,60.35C0,60.35,202.46,113.36,321.39,56.44Z" class="shape-fill" fill="#FFFFFF"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Conosci la Tua Guida</h2>
+            <div class="teacher-section fade-in">
+                <div class="teacher-image">
+                    <img src="images/elena-rossi.png" alt="Elena Rossi - Insegnante di Meditazione">
+                </div>
+                <div class="teacher-bio">
+                    <h3>Elena Rossi</h3>
+                    <p>Elena è una praticante di meditazione da oltre 15 anni e insegnante certificata di Mindfulness-Based Stress Reduction (MBSR). Ha completato la sua formazione presso il Center for Mindfulness dell'Università del Massachusetts e ha studiato con alcuni dei più rinomati maestri di meditazione al mondo.</p>
+                    
+                    <p>La sua passione per la mindfulness è nata durante un periodo particolarmente stressante della sua vita professionale come manager in una multinazionale. Dopo aver sperimentato in prima persona i benefici trasformativi della meditazione, ha deciso di dedicare la sua vita ad aiutare altri a trovare pace e equilibrio.</p>
+                    
+                    <p>Elena combina la saggezza antica delle tradizioni contemplative con le più recenti scoperte delle neuroscienze, creando un approccio moderno e accessibile alla mindfulness. Ha guidato oltre 200 workshop e ritiri, aiutando migliaia di persone a sviluppare una pratica di meditazione sostenibile.</p>
+                    
+                    <p><strong>Certificazioni:</strong> MBSR Teacher, Mindful Schools Certified Instructor, 500h Yoga Teacher Training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title animated animate-fade-up">Cosa Dicono i Nostri Partecipanti</h2>
+
+            <div class="slider-container animated animate-scale-in delay-1">
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Un'esperienza trasformativa! Ho ritrovato la pace interiore che cercavo da tempo. Elena è un'insegnante straordinaria."</p>
+                            <div class="testimonial-author">
+                                <strong>Maria Bianchi</strong>
+                                <span>Partecipante Novembre 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Il workshop mi ha aiutato a gestire meglio lo stress lavorativo. Tecniche pratiche che uso ancora oggi nella vita quotidiana."</p>
+                            <div class="testimonial-author">
+                                <strong>Luca Rossi</strong>
+                                <span>Partecipante Ottobre 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Ambiente sereno e accogliente. Ho imparato tecniche di respirazione che hanno cambiato la mia vita. Consigliatissimo!"</p>
+                            <div class="testimonial-author">
+                                <strong>Anna Verdi</strong>
+                                <span>Partecipante Dicembre 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Non pensavo che un solo giorno potesse fare così tanta differenza. Sono uscito sentendomi più leggero e consapevole. Grazie!"</p>
+                            <div class="testimonial-author">
+                                <strong>Giorgio Conti</strong>
+                                <span>Partecipante Gennaio 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-nav prev" aria-label="Recensione precedente">&lt;</button>
+                <button class="slider-nav next" aria-label="Prossima recensione">&gt;</button>
+
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title animated animate-fade-up">Domande Frequenti</h2>
+            <div class="faq-container">
+                <div class="faq-item animated animate-fade-up delay-1">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>È necessaria esperienza precedente nella meditazione?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente no! Il workshop "Mindful Day" è progettato per accogliere sia principianti assoluti che praticanti con esperienza. Elena adatterà le tecniche al livello di ciascun partecipante, garantendo un'esperienza accessibile e arricchente per tutti.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated animate-fade-up delay-2">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Cosa devo portare al workshop?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ti consigliamo di indossare abiti comodi e di portare una bottiglia d'acqua. Forniremo tappetini da yoga, cuscini per la meditazione e tutto il materiale necessario. Se hai un tappetino personale, sei libero di portarlo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated animate-fade-up delay-3">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Il workshop è adatto a persone con problemi di mobilità?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, tutte le pratiche possono essere adattate per essere eseguite da seduti su una sedia. Ti preghiamo di comunicarci eventuali esigenze specifiche al momento dell'iscrizione, così potremo prepararci al meglio per accoglierti.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated animate-fade-up delay-4">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>È previsto il pranzo durante il workshop?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì! Il workshop include un pranzo vegetariano mindful, preparato con ingredienti biologici e locali. Questo momento fa parte integrante dell'esperienza, permettendoti di praticare la consapevolezza anche durante il pasto. Comunica eventuali allergie o intolleranze alimentari.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated animate-fade-up delay-5">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Posso cancellare la mia iscrizione?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puoi cancellare la tua iscrizione fino a 7 giorni prima del workshop per un rimborso completo. Per cancellazioni entro 3-7 giorni, offriamo un rimborso del 50%. Non sono previsti rimborsi per cancellazioni nelle 48 ore precedenti l'evento.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated animate-fade-up delay-5">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Riceverò materiali da portare a casa?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì! Ogni partecipante riceverà una guida digitale con le tecniche apprese, audio guidati per la pratica a casa, e suggerimenti per integrare la mindfulness nella vita quotidiana. Inoltre, riceverai accesso a una sessione di follow-up online gratuita dopo 2 settimane.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Iscrizione -->
+    <section id="registration" class="section registration">
+        <div class="container">
+            <h2 class="section-title">Prenota il Tuo Posto</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">I posti sono limitati per garantire un'esperienza intima e profonda.</p>
+            
+            <div class="registration-form fade-in">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Il tuo nome e cognome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="la.tua.email@esempio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefono (opzionale)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+39 123 456 7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Esperienza con la meditazione</label>
+                        <select id="experience" name="experience" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                            <option value="">Seleziona il tuo livello</option>
+                            <option value="beginner">Principiante - Mai praticato</option>
+                            <option value="some">Qualche esperienza</option>
+                            <option value="regular">Pratico regolarmente</option>
+                            <option value="advanced">Praticante avanzato</option>
+                        </select>
+                    </div>
+                    <div class="price-highlight">
+                        Investimento: €99 (include materiali e pranzo)
+                    </div>
+                    <button type="submit" class="btn btn-large" style="width: 100%; background: var(--primary-color);">
+                        Iscriviti Ora - €99
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Mindful Day</h3>
+                    <p>Trasforma la tua vita attraverso la pratica della mindfulness</p>
+                </div>
+                <div>
+                    <h4>Contatti</h4>
+                    <p class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </span>
+                        <a href="mailto:info@mindfulday.it">info@mindfulday.it</a>
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.4 22 2 13.6 2 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </span>
+                        <a href="tel:+393456789012">+39 345 678 9012</a>
+                    </p>
+                </div>
+                <div>
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="social-placeholder.html" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="social-placeholder.html" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mindful Day | Tutti i diritti riservati.</p>
+                <p class="footer-disclaimer">🚧 Progetto dimostrativo per portfolio: contenuti e contatti sono a scopo illustrativo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Widget WhatsApp -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div class="whatsapp-button" onclick="toggleWhatsAppChat()">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106"/>
+            </svg>
+        </div>
+        <div class="whatsapp-chat" id="whatsapp-chat">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106"/>
+                    </svg>
+                </div>
+                <div class="chat-info">
+                    <div class="chat-name">Elena Rossi</div>
+                    <div class="chat-status">Online</div>
+                </div>
+                <div class="chat-close" onclick="toggleWhatsAppChat()">×</div>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message">
+                    <div class="message-text">Ciao! 👋 Sono Elena, la tua insegnante di meditazione. Hai domande sul workshop "Mindful Day"?</div>
+                    <div class="message-time">Ora</div>
+                </div>
+                <div class="chat-message">
+                    <div class="message-text">Clicca qui sotto per scrivermi direttamente su WhatsApp! 💚</div>
+                    <div class="message-time">Ora</div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <a href="https://wa.me/393123456789?text=Ciao%20Elena!%20Sono%20interessato%20al%20workshop%20Mindful%20Day.%20Potresti%20darmi%20maggiori%20informazioni?" target="_blank" class="whatsapp-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106"/>
+                    </svg>
+                    Scrivi su WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Early Bird Popup -->
+    <div class="popup-overlay" id="earlyBirdPopup">
+        <div class="popup-content">
+            <button class="popup-close" id="closePopup">&times;</button>
+            <div class="popup-header">
+                <h3>🎉 Offerta Speciale!</h3>
+                <p class="popup-subtitle">Solo per i primi visitatori</p>
+            </div>
+            <div class="popup-body">
+                <div class="discount-badge">-20%</div>
+                <h4>Sconto Early Bird</h4>
+                <p>Prenota ora e risparmia <strong>20€</strong> sul workshop!</p>
+                <div class="popup-price">
+                    <span class="old-price">99€</span>
+                    <span class="new-price">79€</span>
+                </div>
+                <p class="popup-timer">⏰ Offerta valida solo per le prossime <span id="popupTimer">10:00</span> minuti</p>
+                <a href="#registration" class="popup-cta" id="claimOffer">Prenota Ora con Sconto</a>
+                <p class="popup-disclaimer">*Offerta limitata ai primi 10 iscritti</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling per i link di navigazione
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animazioni on-scroll con Intersection Observer
+        const observerOptions = {
+            threshold: 0.1, // L'animazione parte quando il 10% dell'elemento è visibile
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Ferma l'osservazione dopo la prima animazione
+                }
+            });
+        }, observerOptions);
+
+        // Osserva tutti gli elementi con la classe .animated
+        document.querySelectorAll('.animated').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Gestione form di registrazione
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Raccolta dati form
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulazione invio (in un caso reale, qui faresti una chiamata API)
+            alert(`Grazie ${data.name}! La tua richiesta di iscrizione è stata ricevuta. Ti contatteremo presto per confermare la tua partecipazione al workshop Mindful Day.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Effetto parallax leggero per l'hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Header background al scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        if (mobileToggle && mobileNav) {
+            mobileToggle.addEventListener('click', () => {
+                mobileToggle.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+                    mobileToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                }
+            });
+         }
+         
+         // Countdown Timer
+         function initCountdown() {
+             // Set countdown date (7 days from now)
+             const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+             
+             function updateCountdown() {
+                 const now = new Date().getTime();
+                 const distance = countdownDate - now;
+                 
+                 if (distance > 0) {
+                     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                     
+                     document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                     document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                     document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                     document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                 } else {
+                     // Countdown finished
+                     document.querySelector('.countdown-text').textContent = '🔥 Iscrizioni chiuse! Contattaci per la prossima data';
+                     document.getElementById('days').textContent = '00';
+                     document.getElementById('hours').textContent = '00';
+                     document.getElementById('minutes').textContent = '00';
+                     document.getElementById('seconds').textContent = '00';
+                 }
+             }
+             
+             // Update countdown immediately and then every second
+             updateCountdown();
+             setInterval(updateCountdown, 1000);
+         }
+         
+         // Initialize countdown when page loads
+          initCountdown();
+          
+          // Early Bird Popup functionality
+          function initEarlyBirdPopup() {
+              const popup = document.getElementById('earlyBirdPopup');
+              const closeBtn = document.getElementById('closePopup');
+              const claimBtn = document.getElementById('claimOffer');
+              const timerElement = document.getElementById('popupTimer');
+              
+              // Show popup after 3 seconds if not shown before
+              if (!localStorage.getItem('earlyBirdShown')) {
+                  setTimeout(() => {
+                      popup.classList.add('active');
+                      localStorage.setItem('earlyBirdShown', 'true');
+                  }, 3000);
+              }
+              
+              // Popup timer (10 minutes)
+              let popupTime = 10 * 60; // 10 minutes in seconds
+              
+              function updatePopupTimer() {
+                  const minutes = Math.floor(popupTime / 60);
+                  const seconds = popupTime % 60;
+                  timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                  
+                  if (popupTime <= 0) {
+                      popup.classList.remove('active');
+                      return;
+                  }
+                  popupTime--;
+              }
+              
+              // Update timer every second when popup is active
+              const popupTimerInterval = setInterval(() => {
+                  if (popup.classList.contains('active')) {
+                      updatePopupTimer();
+                  }
+              }, 1000);
+              
+              // Close popup events
+              closeBtn.addEventListener('click', () => {
+                  popup.classList.remove('active');
+              });
+              
+              claimBtn.addEventListener('click', () => {
+                  popup.classList.remove('active');
+                  // Update registration form price
+                  const priceElement = document.querySelector('.registration .price');
+                  if (priceElement) {
+                      priceElement.innerHTML = '<span style="text-decoration: line-through; color: #999;">99€</span> <strong style="color: #e74c3c;">79€</strong>';
+                  }
+              });
+              
+              // Close popup when clicking outside
+              popup.addEventListener('click', (e) => {
+                  if (e.target === popup) {
+                      popup.classList.remove('active');
+                  }
+              });
+              
+              // Close popup with Escape key
+              document.addEventListener('keydown', (e) => {
+                  if (e.key === 'Escape' && popup.classList.contains('active')) {
+                      popup.classList.remove('active');
+                  }
+              });
+          }
+          
+          // Initialize popup
+          initEarlyBirdPopup();
+          
+          // WhatsApp Widget functionality
+          function toggleWhatsAppChat() {
+              const widget = document.getElementById('whatsapp-widget');
+              const chat = document.getElementById('whatsapp-chat');
+              
+              if (chat.style.display === 'block') {
+                  chat.style.display = 'none';
+                  widget.classList.remove('chat-open');
+              } else {
+                  chat.style.display = 'block';
+                  widget.classList.add('chat-open');
+              }
+          }
+          
+          // Close WhatsApp chat when clicking outside
+           document.addEventListener('click', function(event) {
+               const widget = document.getElementById('whatsapp-widget');
+               const chat = document.getElementById('whatsapp-chat');
+               
+               if (!widget.contains(event.target) && chat.style.display === 'block') {
+                   chat.style.display = 'none';
+                   widget.classList.remove('chat-open');
+               }
+           });
+           
+           // FAQ functionality
+           function toggleFAQ(element) {
+               const faqItem = element.parentElement;
+               const isActive = faqItem.classList.contains('active');
+               
+               // Close all FAQ items
+               document.querySelectorAll('.faq-item').forEach(item => {
+                   item.classList.remove('active');
+               });
+               
+               // Open clicked item if it wasn't active
+               if (!isActive) {
+                   faqItem.classList.add('active');
+               }
+           }
+
+           // AGGIUNGI QUESTO ALLA FINE DEL TUO SCRIPT ESISTENTE
+           
+           // Logica per lo Slider delle Testimonianze
+           const slider = document.querySelector('.testimonial-slider');
+           const slides = document.querySelectorAll('.testimonial-slide');
+           const prevButton = document.querySelector('.slider-nav.prev');
+           const nextButton = document.querySelector('.slider-nav.next');
+           const dotsContainer = document.querySelector('.slider-dots');
+           
+           let currentSlide = 0;
+           const totalSlides = slides.length;
+           
+           // Crea i pallini dinamicamente
+           for (let i = 0; i < totalSlides; i++) {
+               const dot = document.createElement('div');
+               dot.classList.add('dot');
+               dot.addEventListener('click', () => {
+                   goToSlide(i);
+               });
+               dotsContainer.appendChild(dot);
+           }
+           const dots = document.querySelectorAll('.dot');
+           
+           function goToSlide(slideIndex) {
+               slider.style.transform = `translateX(-${100 * slideIndex}%)`;
+               dots.forEach(dot => dot.classList.remove('active'));
+               dots[slideIndex].classList.add('active');
+               currentSlide = slideIndex;
+           }
+           
+           // Event Listeners per i bottoni
+           nextButton.addEventListener('click', () => {
+               const nextSlide = (currentSlide + 1) % totalSlides;
+               goToSlide(nextSlide);
+           });
+           
+           prevButton.addEventListener('click', () => {
+               const prevSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+               goToSlide(prevSlide);
+           });
+           
+           // Inizializza lo slider
+           goToSlide(0);
+      </script>
+</body>
+</html>
