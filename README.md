@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-* **Guarda il sito live:** [https://mindfulday1.netlify.app/](https://mindfulday1.netlify.app/)
+* **Guarda il sito live:** (https://mindful-day.vercel.app/)
 
 ## 🎯 Obiettivo del Progetto
 
